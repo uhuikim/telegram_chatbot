@@ -44,6 +44,8 @@ def telegram():
 
     if user_input == "로또":
         return_data = "로또를 입력하셨습니다. "
+    elif user_input == "안녕":
+        return_data = "안녕하세요"
     #앞 두글자가 번역일때 번역 실행 / 슬래싱으로 앞 두글자를 빼냄
     elif user_input[0:2] == '번역':
         google_api_url="https://translation.googleapis.com/language/translate/v2"
